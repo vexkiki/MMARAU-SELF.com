@@ -1,0 +1,135 @@
+
+body, h1, nav, ul, li, p, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    background: url('contact.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+}
+
+
+nav {
+    background: rgba(0, 123, 255, 0.8); 
+    padding: 10px 0; 
+}
+
+nav ul {
+    display: flex; 
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background 0.3s; 
+}
+
+nav ul li a:hover {
+    background: #0056b3; 
+    border-radius: 5px; 
+}
+
+
+.wrapper {
+    max-width: 600px; 
+    height: 400px;
+    margin: 40px auto; 
+    padding: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+
+
+h1 {
+    color: #333; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+
+.input-box {
+    margin-bottom: 20px; 
+}
+
+.input-box input, .input-box textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: border 0.3s; 
+}
+
+.input-box input:focus, .input-box textarea:focus {
+    border-color: #007BFF; 
+    outline: none; 
+}
+
+
+.input-box textarea {
+    height: 100px; 
+}
+
+
+.btn {
+    display: inline-block; 
+    width: 100%; 
+    padding: 10px; 
+    background: #FF5733; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background 0.3s; 
+}
+
+.btn:hover {
+    background: #C70039; 
+}
+
+
+.review-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px; 
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-section form {
+    flex: 1; 
+}
+
+.review-section .btn {
+    width: 100%; 
+}
+
+
+    
+ @media (max-width: 600px) {
+    nav ul {
+        flex-direction: row-reverse; 
+    }
+    nav ul li {
+        margin: 20px 0; 
+    }
+ }
